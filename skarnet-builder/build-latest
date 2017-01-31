@@ -144,9 +144,7 @@ for target in "${!targets[@]}"; do
         ./configure \
           --target="$target" \
           --libdir=/usr/lib \
-#          --enable-static \
           --disable-shared \
-#          --enable-static-libc \
           ${includes[$package]} \
           ${libs[$package]} \
           ${sysdeps[$package]} \
